@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://github.com/Y-U-DUMB-Elementary/Y-U-DUMB-Elementary/blob/main/favicon-jeffy.png?raw=true">
+<title>Y U DUMB? Elementary School</title>
+<meta name="description" content="Y U DUMB? Elementary School Is One Of The Best Schools In The Country">
+<style>
+    body {
+        margin: 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(86, 123, 74);
+    }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #5e8253;
+
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 89, 46);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(48, 83, 45);
+}
+
+    .navbar {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 0px;
+      transition: 0.5s;
+    }
+    
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+    
+    .navbar a {
+      color: #fff;
+      padding: 10px 10px;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-right: 10px;
+      transition: 0.5s;
+    }
+
+    .navbar a:hover {
+        border-radius: 10px;
+    background-color: #ddd;
+    color: black;
+    }
+    
+    .navbar-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    button {
+         
+
+      margin: 20px;
+  background: rgba(34, 76, 33, 0.741);
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-flex;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgba(33, 74, 47, 0.768);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slidephoto {
+  width: 100%;
+  height: 70%;
+  min-height: 450px;
+  max-height: 250px;
+  min-width: 800px;
+  max-width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.caption {
+  border-radius: 15px 15px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+}
+
+hr.rounded {
+  text-decoration: none;
+  border-style: none;
+  border-top: 4px solid #1f3d1b;
+  border-radius: 5px;
+  outline: none;
+}
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+#back-to-top-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.768);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        
+        <div class="navbar-text">Y U DUMB? Elementary School</div>
+        <a href="">Home</a>
+
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="slidephoto" src="https://github.com/Y-U-DUMB-Elementary/Y-U-DUMB-Elementary/blob/main/photo1.webp?raw=true"/>
+          <div class="caption">Y U DUMB? Elementary School</div>
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="slidephoto" style="width: 100%" height="70%" src="https://github.com/Y-U-DUMB-Elementary/Y-U-DUMB-Elementary/blob/main/photo1-finish.jpg?raw=true"/>
+          <div class="caption">Enroll Today!</div>
+        </div>
+        </div>
+ 
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <button style="width: 97%;">
+        <span style="font-size: small; transition: 0.3s ease;">Meet The Staff</span>
+    </button>
+    <button style="width: 97%;">
+      <span style="font-size: small; transition: 0.3s ease;">Enroll</span>
+  </button>
+  <br>
+
+
+  <div style="text-align: center;" id="message">
+    <video width="35%" id="gif1" style="border-radius: 15px; margin: 0 auto;   margin-right: 10px;" autoplay loop muted>
+      <source  src="https://github.com/Y-U-DUMB-Elementary/Y-U-DUMB-Elementary/blob/main/video-lol.mp4?raw=true" type="video/mp4">
+    </video>
+    
+    <!--img width="35%" id="gif1" style="border-radius: 15px; margin: 0 auto;   margin-right: 10px;" src="https://github.com/Y-U-DUMB-Elementary/Y-U-DUMB-Elementary/blob/main/video-lol.mp4?raw=true" /-->
+      <p style="font-family: Arial, Helvetica, sans-serif;">Your Child’s Safety Is Our #1 Priority</p>
+
+      <script>
+        
+
+      </script>
+  </div>
+  <hr class="rounded">
+
+  <div style="text-align: center;">
+    <h1>Requirements:</h1>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+    <p>Must Not Be A TURTLE!</p>
+  </div>
+      
+  <div style="height: 150px; width: 100%; background-color: #1f3d1b; color: #ffffffb8;">
+    <br>
+      <div style="text-align:center;">
+        <h3 style="text-align: center;">Contact Us:</h3>
+        <p><a href="tel:830-476-5664" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #151515;">Phone: 830-476-5664</a></p>
+        <p><a href="mailto:y.u.dumb.elementary001@gmail.com" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #151515;">email: y.u.dumb.elementary001@gmail.com</a></p>
+      </div>
+      <h4 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">**This Site Was Made For Fun**</h4>
+  </div>
+  <button id="back-to-top-btn">^</button>
+<script>
+  window.addEventListener('scroll', function() {
+  var backToTopBtn = document.getElementById('back-to-top-btn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+});
+
+
+  document.getElementById('back-to-top-btn').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+</body>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  var captions = document.getElementsByClassName("caption");
+  for (i = 0; i < captions.length; i++) {
+      captions[i].style.display = "none";
+  }
+  captions[slideIndex-1].style.display = "block";
+}
+
+
+</script>
+</html>
